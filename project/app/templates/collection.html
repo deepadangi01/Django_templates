@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if data %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Quali.</th>
+            </tr>
+        </thead>
+    {% for i in data %}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.quali}}</td>
+      </tr>
+
+         
+    {% endfor %}
+    </table>
+   {% endif %}
+</body>
+</html>

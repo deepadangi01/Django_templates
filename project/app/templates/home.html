@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} 
+    Name:{{key.name}}<br>
+    Age:{{kye.age}}<br>
+    Quali:{{key.quali}}<br> 
+    {% endcomment %}
+    {% if key %}
+        {% if key.name%}
+           {{key.name}}
+        {% else %}
+           <h3>hello........</h3>
+        {% endif %}
+    {% elif key2 %}
+      {{key2}}
+    {% elif key3 %}
+      {{key3}}
+    {% else %}
+     <h1>Not found</h1>
+    {% endif %}
+
+</body>
+</html>
